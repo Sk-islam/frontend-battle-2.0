@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embodied Carbon Emissions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="loader">
+      <video id="loaderVideo" autoplay muted loop playsinline>
+        <source src="/loader.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h1>Carbon Dashboard</h1>
+      <ul>
+        <li><a href="#filters">Filters</a></li>
+        <li><a href="#chart">Chart</a></li>
+      </ul>
+      <button id="darkModeToggle" class="toggle-btn">
+        🌙 Toggle Dark Mode
+      </button>
+    </nav>
+
+    <!-- Main Section -->
+    <main>
+      <section id="filters" class="filter-section">
+        <h2>Filter by</h2>
+        <div class="filter-group">
+          <p>Type</p>
+          <button class="filter-btn selected">Refurbishment</button>
+          <button class="filter-btn">New build</button>
+          <button class="filter-btn">All</button>
+        </div>
+        <div class="filter-group">
+          <p>Status</p>
+          <button class="filter-btn selected">Complete</button>
+          <button class="filter-btn">Estimate</button>
+        </div>
+      </section>
+
+      <section id="chart" class="chart-section">
+        <div class="chart-header">
+          <h1><span>EMBODIED</span><br /><strong>CARBON EMISSIONS</strong></h1>
+          <p>Intensity measured by kgCO<sub>2</sub>e/m<sup>2</sup></p>
+          <button class="download-btn">Download the data ⬇</button>
+        </div>
+        <div class="chart-key">
+          <p>Key</p>
+          <p class="dashed-line">
+            500 kgCO<sub>2</sub>e/m<sup>2</sup> - Embodied Carbon Target 2030
+          </p>
+          <p class="solid-line">
+            600 kgCO<sub>2</sub>e/m<sup>2</sup> - Embodied Carbon Target 2025
+          </p>
+        </div>
+        <canvas id="carbonChart"></canvas>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

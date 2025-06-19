@@ -1,0 +1,186 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fefaf9;
+  color: #2c2c2c;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Support */
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark .navbar {
+  background-color: #1f1f1f;
+}
+
+body.dark .filter-btn.selected {
+  background-color: #f0f0f0;
+  color: #1f1f1f;
+}
+
+body.dark .download-btn {
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Navbar */
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff3f0;
+  border-bottom: 1px solid #ccc;
+}
+
+nav.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav.navbar a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+.toggle-btn {
+  padding: 0.4rem 1rem;
+  border: 1px solid #6b3d3d;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #6b3d3d;
+  cursor: pointer;
+}
+
+/* Main Layout */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.filter-section {
+  margin-bottom: 3rem;
+}
+
+.filter-group {
+  margin-bottom: 1rem;
+}
+
+.filter-btn {
+  padding: 0.6rem 1rem;
+  margin-right: 0.5rem;
+  border: 1px solid #6b3d3d;
+  background: transparent;
+  border-radius: 20px;
+  color: #6b3d3d;
+  cursor: pointer;
+}
+
+.filter-btn.selected {
+  background-color: #6b3d3d;
+  color: white;
+}
+
+/* Chart Section */
+.chart-section h1 {
+  font-size: 2rem;
+  text-align: right;
+  color: #6b3d3d;
+}
+
+.chart-header p {
+  text-align: right;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+.download-btn {
+  float: right;
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 50px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+}
+
+/* Chart Keys */
+.chart-key {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.dashed-line::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    #333,
+    #333 5px,
+    transparent 5px,
+    transparent 10px
+  );
+  margin-right: 0.5rem;
+}
+
+.solid-line::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: #333;
+  margin-right: 0.5rem;
+}
+
+#carbonChart {
+  width: 100%;
+  max-height: 500px;
+}
+
+/* Loader */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#loader video {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  nav.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .chart-section h1,
+  .chart-header p,
+  .download-btn {
+    text-align: left;
+    float: none;
+  }
+}
