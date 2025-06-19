@@ -1,37 +1,37 @@
-# frontend-battle-2.0
-Responsive carbon dashboard for Frontend Battle 2.0
-# Frontend Battle 2.0 – Round 1: Replicate & Innovate
+# Frontend Battle 2.0 – Round 1 Submission
 
-## 👨‍💻 Project Description
+Welcome to my submission for the Frontend Battle 2.0 Round 1!
 
-A responsive carbon emissions dashboard designed by replicating the provided mockup and innovating with dark mode, animations, and filtering UI.
+## 🚀 Live Demo
+[View Project on Netlify](https://sunny-arithmetic-ae4bfe.netlify.app)
 
-## 🔥 Live Link
+## 📂 GitHub Repo
+[GitHub Repository](https://github.com/Sk-Islam/frontend-battle-2.0)
 
-🔗 [View Deployed App](https://your-netlify-link.netlify.app)
+## ✅ Implemented Features
+- Pixel-perfect design replication
+- Responsive layout across devices
+- Loader animation on startup
+- Light/Dark mode toggle
+- Interactive Chart.js data visualization
+- Fully linked navigation bar
+- Sectioned layout using assets from the drive
+- Smooth transitions and hover effects
 
-## 💻 Tech Stack
-
+## ⚒️ Tools & Tech Stack
 - HTML, CSS, JavaScript
 - Chart.js
-- Responsive Design
-- Light/Dark Mode Toggle
-- Animated Loader
+- Git & GitHub
+- Netlify (for deployment)
 
-## ✅ Features Implemented
+## 🤖 AI Tools Used
+- OpenAI ChatGPT (for code structuring & optimization assistance)
 
-- Responsive Layout
-- Loader (from provided assets)
-- Navbar with anchor links
-- Filter UI
-- Chart.js Bar Chart
-- Download Button
-- Light/Dark Theme Toggle
+## 📄 Submission Info
+- Submitted before deadline (June 19, 2025, 6:00 PM IST)
+- Public GitHub repository & deployed site provided
+- All required features implemented and enhanced
 
-## ⚙️ Setup Instructions
+---
 
-```bash
-git clone https://github.com/your-username/frontend-battle-2.0
-cd frontend-battle-2.0
-open index.html in browser
-```
+Thanks for this great challenge! 💻✨
